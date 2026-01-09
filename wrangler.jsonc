@@ -5,6 +5,7 @@
 	"compatibility_date": "2026-01-05",
 	"compatibility_flags": ["nodejs_compat"],
 	"vars": {
+		"N8N_API_URL": "",
 		"N8N_API_KEY": ""
 	},
 	"observability": {

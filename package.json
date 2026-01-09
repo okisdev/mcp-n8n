@@ -1,15 +1,31 @@
 {
   "name": "mcp-n8n",
+  "version": "0.0.1",
+  "description": "MCP server for n8n workflow management",
+  "keywords": [
+    "n8n",
+    "mcp",
+    "model-context-protocol",
+    "workflow",
+    "automation",
+    "cloudflare-workers"
+  ],
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "hono": "^4.11.3"
+    "@hono/mcp": "^0.2.3",
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "hono": "^4.11.3",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
-    "wrangler": "^4.4.0"
-  }
+    "@cloudflare/workers-types": "^4.20260109.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.58.0"
+  },
+  "license": "MIT"
 }
